@@ -70,11 +70,15 @@ class ClassWriter extends WriterAbstract
      */
     public function writeElement(IReflectionClass $class)
     {
-        $classString = $this->formatLine(
-            $this->writeAbstract($class) . $this->writeObjectType($class) . ' ' . $this->formatClassName(
-                $class->getName()
-            ) . ' {'
+        $classString = $this->writeAbstract($class) . $this->writeObjectType($class) . ' ' . $this->formatClassName(
+            $class->getName()
         );
+        
+        // traits
+        if ($class->isTrait()) {
+            $classString .= ' << trait >>';
+        }
+        $classString = $this->formatLine($classString.' {');
 
         if ($this->constantWriter) {
             $constantReflections = $class->getOwnConstantReflections();
@@ -131,6 +135,18 @@ class ClassWriter extends WriterAbstract
             }
         }
 
+        // traits
+        if ($traitNames = $class->getOwnTraitNames()) {
+            foreach ($traitNames as $traitName) {
+                $classString .= $this->formatLine(
+                    $this->writeObjectType($class) . ' ' . $this->formatClassName($class->getName()) . ' extends '
+                    . $this->formatClassName(
+                        $traitName
+                    )
+                );
+            }
+        }
+
         return $classString;
     }
 
@@ -142,7 +158,7 @@ class ClassWriter extends WriterAbstract
     private function writeAbstract(IReflectionClass $class)
     {
         $return = '';
-        if (true === $class->isAbstract() && false === $class->isInterface()) {
+        if (true === $class->isAbstract() && false === $class->isInterface() && false === $class->isTrait()) {
             $return = 'abstract ';
         }
         return $return;

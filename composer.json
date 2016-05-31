@@ -22,14 +22,8 @@
             "Flagbit": "src/"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/kornrunner/PHP-Token-Reflection"
-        }
-    ],
     "require": {
-        "andrewsville/php-token-reflection": "dev-develop",
+        "kornrunner/php-token-reflection": "dev-master",
         "symfony/console": "~2.3"
     },
     "require-dev": {

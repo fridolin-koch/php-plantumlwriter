@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45b701bd38a8134149a29f6bc7bdcc95",
-    "content-hash": "c8a1eda887242717beed2fdfd8da0126",
+    "hash": "60ad587a3833b1dce5cc408edeb3002c",
+    "content-hash": "66cb756c3af2aab3eb16e31d08b6f556",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
-            "version": "1.4.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Andrewsville/PHP-Token-Reflection.git",
-                "reference": "e6d0ac2baf66cdf154be34c3d2a2aa1bd4b426ee"
+                "reference": "8719392e092d803e188fd351d15880bbf2efff91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Andrewsville/PHP-Token-Reflection/zipball/e6d0ac2baf66cdf154be34c3d2a2aa1bd4b426ee",
-                "reference": "e6d0ac2baf66cdf154be34c3d2a2aa1bd4b426ee",
+                "url": "https://api.github.com/repos/Andrewsville/PHP-Token-Reflection/zipball/8719392e092d803e188fd351d15880bbf2efff91",
+                "reference": "8719392e092d803e188fd351d15880bbf2efff91",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "reflection",
                 "tokenizer"
             ],
-            "time": "2014-08-06 16:37:08"
+            "time": "2014-08-06 16:37:21"
         },
         {
             "name": "symfony/console",
@@ -496,13 +496,13 @@
             "version": "1.2.3",
             "source": {
                 "type": "git",
-                "url": "git://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "1.2.3"
+                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sebastianbergmann/phpunit-mock-objects/archive/1.2.3.zip",
-                "reference": "1.2.3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/5794e3c5c5ba0fb037b11d8151add2a07fa82875",
+                "reference": "5794e3c5c5ba0fb037b11d8151add2a07fa82875",
                 "shasum": ""
             },
             "require": {
@@ -592,7 +592,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "andrewsville/php-token-reflection": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

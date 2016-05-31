@@ -29,7 +29,7 @@
         }
     ],
     "require": {
-        "andrewsville/php-token-reflection": "dev-master",
+        "andrewsville/php-token-reflection": "dev-develop",
         "symfony/console": "~2.3"
     },
     "require-dev": {

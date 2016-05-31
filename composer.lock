@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60ad587a3833b1dce5cc408edeb3002c",
-    "content-hash": "66cb756c3af2aab3eb16e31d08b6f556",
+    "hash": "25fb9712355cab19538ea250a1a6290b",
+    "content-hash": "a0f13692111ddae6e3df327b1af112de",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Andrewsville/PHP-Token-Reflection.git",
-                "reference": "8719392e092d803e188fd351d15880bbf2efff91"
+                "reference": "1c5ff91ee6877d1fb0f60fab3e3fc562bdb02684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Andrewsville/PHP-Token-Reflection/zipball/8719392e092d803e188fd351d15880bbf2efff91",
-                "reference": "8719392e092d803e188fd351d15880bbf2efff91",
+                "url": "https://api.github.com/repos/Andrewsville/PHP-Token-Reflection/zipball/1c5ff91ee6877d1fb0f60fab3e3fc562bdb02684",
+                "reference": "1c5ff91ee6877d1fb0f60fab3e3fc562bdb02684",
                 "shasum": ""
             },
             "require": {
@@ -52,7 +52,7 @@
                 "reflection",
                 "tokenizer"
             ],
-            "time": "2014-08-06 16:37:21"
+            "time": "2014-08-06 16:37:44"
         },
         {
             "name": "symfony/console",
